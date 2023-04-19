@@ -1,0 +1,587 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %}Home_page{% endblock title %}
+
+    <!-- banner -->
+    {% block carousel %}       
+    
+    <div class="lolamimi">
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+  </div>
+  <!-- header done -->
+
+  <!-- carousel -->
+  <div class="special">
+  <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active h-100" data-bs-interval="10000">
+          <img src="{% static '' %}img/carousel1.jpg" class="d-block h-100 w-100" alt="...">
+          <div class="like"></div>
+          <div class="carousel-caption d-md-block">
+            <div class="cables text-start">
+              <p data-aos="fade-up" data-aos-duration="3000">We have <span id="counter"></span> great job offers you deserve!</p>
+              <h1 data-aos="fade-up" data-aos-duration="3000">Your Dream</h1>
+              <h2 data-aos="fade-up" data-aos-duration="3000">Job is waiting</h2>
+            </div>
+            
+            <span class="gala d-flex" data-aos="fade-up" data-aos-duration="3000"> 
+              <a href="" class="btn btn-light me-1">Find Job</a>
+              <a href="" class="btn btn-primary">Find a candidate</a>
+            </span>
+
+            <span class="yanmife m-3" data-aos="fade-up" data-aos-duration="3000">
+              <form action="">
+                <div class="row gy-3 bg-light basees" data-aos="fade-up" data-aos-duration="3000">
+                  <div class="col-12 col-md-3">
+                    <div class="me-2">
+                        <input type="text" class="form-control" placeholder="Job Title">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <input type="text" class="form-control" placeholder="Category">
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <input type="text" class="form-control" placeholder="Location">
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <button type="submit" class="form-control btn-primary">Search</button>
+                  </div>
+                </div>
+              </form>
+            </span>
+       
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <i class="fas fa-moon"></i> -->
+     
+    </div>
+    <!-- carousel end -->
+      <!-- navbar start -->
+    <!-- <nav class="navbar pt-5 navbar-expand-lg"> -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="header">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">JobPortal</a> 
+        <span class="toggle bg-warning p-2">
+          <i class="fas fa-moon"></i>
+          <!-- <i class="fas fa-sun"></i> -->
+        </span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-success glad p-2" href="{% url 'employer_postdash' %}">Post a job</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary glad p-2" href="{% url 'jobs' %}">Want a job</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary glad p-2" href="{% url 'register' %}">Register</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="nav-link btn btn-primary glad p-2" data-bs-toggle="modal" data-bs-target="#signin">
+                Sign in
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn" href="{% url 'employee_dashboard' %}"><img src="/img/allef-vinicius-BqNEe_ZAtxg-unsplash.jpg" class="hego" alt="">&nbsp; Promise</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends -->
+  </div>
+    
+    {% endblock carousel %}
+    <!-- banner done -->
+
+    <!-- content -->
+    {% block content %}    
+    <div class="content">
+      <div class="container legacy">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="3000">
+          <div class="col-10 col-md-3 mb-2">
+            <div class="new">
+              <img src="{% static '' %}img/content1.png" class="w-25 mb-2 pb-2" alt="">
+
+              <h4 class="gee">Search Millions of Jobs</h4>
+              <p class="d-block">A small river named Duden flows by their place and supplies.</p>
+            </div>
+          </div>
+          <div class="col-10 col-md-3 mb-2">
+            <div class="new">
+              <img src="{% static '' %}img/content2a.png" class="w-25 mb-2 pb-2" alt="">
+              <h4 class="gee">Easy To Manage Jobs</h4>
+              <p class="d-block">A small river named Duden flows by their place and supplies.</p>
+            </div>
+          </div>
+          <div class="col-10 col-md-3 mb-2">
+            <div class="new">
+            <img src="{% static '' %}img/3.png" class="w-25 mb-4 pb-2" alt="">
+              <h4 class="gee">Top Careers</h4>
+              <p class="d-block">A small river named Duden flows by their place and supplies.</p>
+            </div>
+          </div>
+          <div class="col-10 col-md-3 mb-2">
+            <div class="new">
+              <img src="{% static '' %}img/content4.png" class="w-25 mb-3 pb-2" alt="">
+              <h5 class="mt-2 gee">Search Expert Candidates</h5>
+              <p class="d-block">A small river named Duden flows by their place and supplies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- btn btn-success w-75 p-2 -->
+
+
+    <div class="content1 text-center mb-5 mt-5">
+      <div class="container">
+        <h5 class="pt-3 pb-4 yes" data-aos="fade-up" data-aos-duration="3000">Categories work wating for you</h5>
+        <h1 class="pt-3 pb-4 lolami yes" data-aos="fade-up" data-aos-duration="3000">Current Job Posts</h1>
+        <div class="gateway">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="3000">
+            {% for items in response %}
+              <div class="col-12 col-md-3">
+                <a href="" class="btn p-3 w-100 fainting">
+                  {{items.title}} <span class="badge bg-secondary">{{items.noofjobs}}</span>
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="content text-capitalize recent">
+      <div class="container pt-5">
+        <p class="note text-center" data-aos="fade-up" data-aos-duration="3000">Recently added jobs</p>
+        <h4 class="note text-center pb-5" data-aos="fade-up" data-aos-duration="3000">Recent Jobs</h4>
+        <div class="row justify-content-center">
+          
+          {% for items in new %}  
+            <div class="col-12 col-md-10" data-aos="fade-up" data-aos-duration="3000">
+              <div class="gabby d-flex justify-content-between align-items-start mb-2">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold pb-3"><span class="holdme">{{items.job_title}}</span><span class="badge bg-primary rounded-pill goddid">{{items.duty}}</span></div>
+                  <span class="holdme"><i class="fas fa-database"></i> {{items.company}} &nbsp;<i class="fas fa-location"></i>  {{items.location}} </span>
+                </div>
+                <!-- <span class="badge bg-primary rounded-pill goddid">14</span> -->
+                <a href="" class="btn btn-primary">Apply now</a>
+              </div>
+            </div>
+          {% endfor %}
+            
+
+          {% comment %} <div class="col-12 col-md-10" data-aos="fade-up" data-aos-duration="3000">
+            <div class="gabby d-flex justify-content-between align-items-start mb-2">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold pb-3"><span class="holdme">Full Stack Developer </span><span class="badge bg-warning rounded-pill goddid">full-time</span></div>
+                <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+              </div>
+              <!-- <span class="badge bg-primary rounded-pill goddid">14</span> -->
+              <a href="" class="btn btn-primary">Apply now</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-10" data-aos="fade-up" data-aos-duration="3000">
+            <div class="gabby d-flex justify-content-between align-items-start mb-2">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold pb-3"><span class="holdme">Open Source Interactive Developer </span><span class="badge bg-secondary rounded-pill goddid">full-time</span></div>
+                <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+              </div>
+              <a href="" class="btn btn-primary">Apply now</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-10" data-aos="fade-up" data-aos-duration="3000">
+            <div class="gabby d-flex justify-content-between align-items-start mb-2">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold pb-3"><span class="holdme">Frontend Development </span><span class="badge bg-success rounded-pill goddid">part-time</span></div>
+                <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+              </div>
+              <!-- <span class="badge bg-primary rounded-pill goddid">14</span> -->
+              <a href="" class="btn btn-primary">Apply now</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-10" data-aos="fade-up" data-aos-duration="3000">
+            <div class="gabby d-flex justify-content-between align-items-start mb-2">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold pb-3"><span class="holdme">Open Source Interactive Developer </span><span class="badge bg-dark rounded-pill goddid">part-time</span></div>
+                <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+              </div>
+              <!-- <span class="badge bg-primary rounded-pill goddid">14</span> -->
+              <a href="" class="btn btn-primary">Apply now</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-10" data-aos="fade-up" data-aos-duration="3000">
+            <div class="gabby d-flex justify-content-between align-items-start mb-2">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold pb-3"><span class="holdme">Full Stack Developer </span><span class="badge bg-primary rounded-pill goddid">full-time</span></div>
+                <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+              </div>
+              <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+              <a href="" class="btn btn-primary">Apply now</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-10" data-aos="fade-up" data-aos-duration="3000">
+            <div class="gabby d-flex justify-content-between align-items-start mb-2">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold pb-3"><span class="holdme">Frontend Development </span><span class="badge bg-warning rounded-pill goddid">part-time</span></div>
+                <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+              </div>
+              <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+              <a href="" class="btn btn-primary">Apply now</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-10" data-aos="fade-up" data-aos-duration="3000">
+            <div class="gabby d-flex justify-content-between align-items-start mb-2">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold pb-3"><span class="holdme">Full Stack Developer</span><span class="badge bg-danger rounded-pill goddid">part-time</span></div>
+                <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+              </div>
+              <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+              <a href="" class="btn btn-primary">Apply now</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-10" data-aos="fade-up" data-aos-duration="3000">
+            <div class="gabby d-flex justify-content-between align-items-start mb-2">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold pb-3"><span class="holdme">Frontend Development </span><span class="badge bg-success rounded-pill goddid">full-time</span></div>
+                <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+              </div>
+              <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+              <a href="" class="btn btn-primary">Apply now</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-10" data-aos="fade-up" data-aos-duration="3000">
+            <div class="gabby d-flex justify-content-between align-items-start mb-2">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold pb-3"><span class="holdme">Open Source Interactive Developer </span><span class="badge bg-success rounded-pill goddid">part-time</span></div>
+                <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+              </div>
+              <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+              <a href="" class="btn btn-primary">Apply now</a>
+            </div>
+          </div> {% endcomment %}
+
+        </div>
+        <div class="text-center" data-aos="fade-up" data-aos-duration="3000">
+          <div class="container">
+            <div class="row justify-content-center mt-4">
+              <div class="col-1 jane me-3 p-auto">1</div>
+              <div class="col-1 jane me-3 p-auto">2</div>
+              <div class="col-1 jane me-3 p-auto">3</div>
+              <div class="col-1 jane me-3 p-auto">4</div>
+              <div class="col-1 jane me-3 p-auto">5</div>
+              <div class="col-1 jane me-3 p-auto">6</div>
+              <div class="col-1 jane me-3 p-auto">7</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="anotherone text-center text-capitalize text-light">
+      <!-- <div class="jerome"></div> -->
+      <div class="container p-5" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row justify-content-center">
+          <div class="col-8 col-md-3 mb-2">
+            <!-- <h4><span id="counter2"></span></h4> -->
+            <h4>423000</h4>
+            <h6>jobs</h6>
+          </div>
+          <div class="col-8 col-md-3 mb-2">
+            <!-- <h4><span id="counter3"></span></h4> -->
+            <h4>423000</h4>
+            <h6>Members</h6>
+          </div>
+          <div class="col-8 col-md-3 mb-2">
+            <!-- <h4><span id="counter4"></span></h4> -->
+            <h4>423000</h4>
+            <h6>Resume</h6>
+          </div>
+          <div class="col-8 col-md-3 mb-2">
+            <!-- <h4><span id="counter5"></span></h4> -->
+            <h4>423000</h4>
+            <h6>Company</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="content3 p-5">
+    <div class="container mt-5">
+      <h6 class="pt-3 pb-4 text-center text-capitalize yes" data-aos="fade-up" data-aos-duration="3000">Testimonial</h6>
+      <h1 class="pt-3 pb-4 text-center text-capitalize lolami yes" data-aos="fade-up" data-aos-duration="3000">Happy Clients</h1>
+      
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner" style="height: 80vh;">
+        <div class="carousel-item h-100 active">
+          <!-- <img src="..." class="d-block w-100" alt="..."> -->
+          <div class="row justify-center-content" data-aos="fade-up" data-aos-duration="3000">
+            <div class="col-12 col-md-4 d-block">
+              <div class="gegege pb-4">
+                <img src="{% static '' %}img/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" class="w-25" alt="">
+              </div>
+
+              <div class="yes gegegg">
+                <p class="yes remm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Nemo, distinctio tempora. Ab corporis numquam maxime id. Vel repudiandae
+                   quam aut repellat possimus laudantium natus.</p>
+                   
+                   <h5>Reveioo Suuknv</h5>
+                    <h6>UI Designer</h6>
+              </div>
+            </div>
+
+            <div class="col-9 col-md-4 d-none d-md-block">
+              <div class="yes gegege pb-4">
+                <img src="{% static '' %}img/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" class="w-25" alt="">
+              </div>
+
+              <div class="yes gegegg">
+                <p class="remm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Nemo, distinctio tempora. Ab corporis numquam maxime id. Vel repudiandae
+                   quam aut repellat possimus laudantium natus.</p>
+                   <h5>Reveioo Suuknv</h5>
+                   <h6>UI Designer</h6>
+              </div>
+            </div>
+
+            <div class="col-9 col-md-4 d-none d-md-block">
+              <div class="gegege pb-4">
+                <img src="{% static '' %}img/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" class="w-25" alt="">
+              </div>
+
+              <div class="yes gegegg">
+                <p class="remm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Nemo, distinctio tempora. Ab corporis numquam maxime id. Vel repudiandae
+                   quam aut repellat possimus laudantium natus.</p>
+
+                   <h5>Reveioo Suuknv</h5>
+                   <h6>UI Designer</h6>
+              </div>
+            </div>
+          </div>
+          <!-- <img src="..." class="d-block w-100" alt="..."> -->
+
+        </div>
+        <div class="carousel-item h-100">
+          <!-- <img src="..." class="d-block w-100" alt="..."> -->
+          <div class="row justify-center-content" data-aos="fade-up" data-aos-duration="3000">
+            <div class="col-12 col-md-4 d-block">
+              <div class="gegege pb-4">
+                <img src="{% static '' %}img/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" class="w-25" alt="">
+              </div>
+
+              <div class="yes gegegg">
+                <p class="remm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Nemo, distinctio tempora. Ab corporis numquam maxime id. Vel repudiandae
+                   quam aut repellat possimus laudantium natus.</p>
+                   
+                   <h5>Reveioo Suuknv</h5>
+                    <h6>UI Designer</h6>
+              </div>
+            </div>
+
+            <div class="col-9 col-md-4 d-none d-md-block">
+              <div class="gegege pb-4">
+                <img src="{% static '' %}img/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" class="w-25" alt="">
+              </div>
+
+              <div class="yes gegegg">
+                <p class="remm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Nemo, distinctio tempora. Ab corporis numquam maxime id. Vel repudiandae
+                   quam aut repellat possimus laudantium natus.</p>
+                   <h5>Reveioo Suuknv</h5>
+                   <h6>UI Designer</h6>
+              </div>
+            </div>
+
+            <div class="col-9 col-md-4 d-none d-md-block">
+              <div class="gegege pb-4">
+                <img src="{% static '' %}img/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" class="w-25" alt="">
+              </div>
+
+              <div class="yes gegegg">
+                <p class="remm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Nemo, distinctio tempora. Ab corporis numquam maxime id. Vel repudiandae
+                   quam aut repellat possimus laudantium natus.</p>
+
+                   <h5>Reveioo Suuknv</h5>
+                   <h6>UI Designer</h6>
+              </div>
+            </div>
+          </div>
+          <!-- <img src="..." class="d-block w-100" alt="..."> -->
+        </div>
+        <div class="carousel-item h-100">
+          <!-- <img src="..." class="d-block w-100" alt="..."> -->
+
+          <div class="row justify-center-content" data-aos="fade-up" data-aos-duration="3000">
+            <div class="col-12 col-md-4 d-block">
+              <div class="gegege pb-4">
+                <img src="{% static '' %}img/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" class="w-25" alt="">
+              </div>
+
+              <div class="yes gegegg">
+                <p class="remm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Nemo, distinctio tempora. Ab corporis numquam maxime id. Vel repudiandae
+                   quam aut repellat possimus laudantium natus.</p>
+                   
+                   <h5>Reveioo Suuknv</h5>
+                    <h6>UI Designer</h6>
+              </div>
+            </div>
+
+            <div class="col-9 col-md-4 d-none d-md-block">
+              <div class="gegege pb-4">
+                <img src="{% static '' %}img/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" class="w-25" alt="">
+              </div>
+
+              <div class="yes gegegg">
+                <p class="remm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Nemo, distinctio tempora. Ab corporis numquam maxime id. Vel repudiandae
+                   quam aut repellat possimus laudantium natus.</p>
+                   <h5>Reveioo Suuknv</h5>
+                   <h6>UI Designer</h6>
+              </div>
+            </div>
+
+            <div class="col-9 col-md-4 d-none d-md-block">
+              <div class="gegege pb-4">
+                <img src="{% static '' %}img/ali-morshedlou-WMD64tMfc4k-unsplash.jpg" class="w-25" alt="">
+              </div>
+
+              <div class="yes gegegg">
+                <p class="remm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Nemo, distinctio tempora. Ab corporis numquam maxime id. Vel repudiandae
+                   quam aut repellat possimus laudantium natus.</p>
+
+                   <h5>Reveioo Suuknv</h5>
+                   <h6>UI Designer</h6>
+              </div>
+            </div>
+          </div>
+          <!-- <img src="..." class="d-block w-100" alt="..."> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+    <div class="content p-5">
+      <div class="container shola">
+        <p class="text-center text-capitalize" data-aos="fade-up" data-aos-duration="3000">our Blog</p>
+        <h3 class="text-center text-capitalize mb-5" data-aos="fade-up" data-aos-duration="3000">Recent Blog</h3>   
+
+        <div class="row justify-content-center laugh">
+          
+          <div class="col-12 col-md-3" data-aos="fade-up" data-aos-duration="3000">
+            <div class="card">
+              <img src="/img/helper2.jpg" class="card-img-top w-100 teller" alt="...">
+              <div class="card-body">
+                <h6 class="card-title"><em>DECEMBER 2, 2018 ADMIN</em> &nbsp;<i class="fas fa-comment"></i> &nbsp;3</h6>
+                <p class="card-title mb-4 kegite"><a href="">Even the all-powerful Pointing has no control about the blind texts</a></p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto enim non iste maxime optio, ut com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3" data-aos="fade-up" data-aos-duration="3000">
+            <div class="card">
+              <img src="/img/helper3.jpg" class="card-img-top w-100 teller" alt="...">
+              <div class="card-body">
+                <h6 class="card-title"><em>DECEMBER 2, 2018 ADMIN</em> &nbsp;<i class="fas fa-comment"></i> &nbsp;3</h6>
+                <p class="card-title mb-4 kegite"><a href="">Even the all-powerful Pointing has no control about the blind texts</a></p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto enim non iste maxime optio, ut com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3" data-aos="fade-up" data-aos-duration="3000">
+            <div class="card">
+              <img src="/img/helper4.jpg" class="card-img-top w-100 teller" alt="...">
+              <div class="card-body">
+                <h6 class="card-title"><em>DECEMBER 2, 2018 ADMIN</em> &nbsp;<i class="fas fa-comment"></i> &nbsp;3</h6>
+                <p class="card-title mb-4 kegite"><a href="">Even the all-powerful Pointing has no control about the blind texts</a></p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto enim non iste maxime optio, ut com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3" data-aos="fade-up" data-aos-duration="3000">
+            <div class="card">
+              <img src="/img/helper5.jpg" class="card-img-top w-100 teller" alt="...">
+              <div class="card-body">
+                <h6 class="card-title"><em>DECEMBER 2, 2018 ADMIN</em> &nbsp;<i class="fas fa-comment"></i> &nbsp;3</h6>
+                <p class="card-title mb-4 kegite"><a href="">Even the all-powerful Pointing has no control about the blind texts</a></p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto enim non iste maxime optio, ut com</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="grapes">
+
+      <div class="card text-center">
+        <div class="card-body" data-aos="fade-up" data-aos-duration="3000">
+            <div class="row justify-content-center text-center align-items-center">
+              <div class="col-12 col-md-5">
+                <h1 class="text-center text-capitalize lolae">Subscribe to our news letter</h1>
+                <p class="text-center text-capitalize">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima amet, aliquam iusto aperiam dignissimos sapiente quidem.</p>
+                <form action="">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control jesus" placeholder="Enter Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-success" type="button" id="button-addon2">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+    {% endblock content %}          
+    <!-- content done -->
+
+    <!-- footer -->
+     {% block footer %}       {% include 'footer.html' %}      {% endblock footer %}
+    <!-- footer done -->
+

@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock title %}
+
+{% load static %}
+
+    <!-- banner -->
+{% block carousel %}       
+        <!-- header -->
+        <div class="lolamimi">
+          <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+      </div>
+        <!-- header done -->
+
+        <!-- banner -->
+        <div class="special">
+            <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" style="height: 80vh;">
+                  <div class="carousel-item active h-100" data-bs-interval="10000">
+                    <img src="/img/allef-vinicius-BqNEe_ZAtxg-unsplash.jpg" class="d-block h-100 w-100" alt="...">
+                    <div class="likeie"></div>
+                    <div class="carousel-caption d-md-block observer">
+                      <div class="text-start">
+                            <h2>Hello Promise!...</h2>
+                            <p>This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
+                            <a href="" class="btn btn-primary p-3">Edit profile</a>
+                      </div>
+                 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <!-- carousel end -->
+                <!-- navbar start -->
+              <!-- <nav class="navbar pt-5 navbar-expand-lg"> -->
+              <nav class="navbar navbar-expand-lg sticky-top" id="header">
+                <div class="container">
+                  <a class="navbar-brand" href="{% url 'index' %}">JobPortal</a>
+                  <span class="toggle bg-warning p-2">
+                    <i class="fas fa-moon"></i>
+                    <!-- <i class="fas fa-sun"></i> -->
+                  </span>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-bars"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn btn-success glad p-2" href="{% url 'employer_postdash' %}">Post a job</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn btn-primary glad p-2" href="{% url 'jobs' %}">Want a job</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn" href="{% url 'employee_dashboard' %}"><img src="/img/allef-vinicius-BqNEe_ZAtxg-unsplash.jpg" class="hego" alt="">&nbsp; Promise</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <!-- navbar ends -->
+            </div>
+            <!-- carousel done -->
+        <!-- banner done -->
+
+        <!-- content -->
+
+    
+{% endblock carousel %}
+    <!-- banner done -->
+
+<!-- content -->
+{% block content %}    
+
+    <div class="content">
+      <div class="container-fluid killer">
+          <div class="row justify-content-conter">
+              <div class="col-12 col-lg-8 order-1 order-lg-0">
+                  <div class="loverman">
+                      <div class="lavar">
+                      <h5 class="justify-content-between p-4 bg-light">My Account</h5>
+                      
+                 
+                  <form action="">
+                      <div class="row justify-content-center">
+                          <!-- <div class="col-12 col-md-10 mb-3"><h5 class="justify-content-between bg-light p-4">My Account</h5></div> -->
+                          <div class="col-12 col-md-10 pt-3"><h5>user information</h5></div>
+                          <div class="col-12 col-md-5">
+                              <div class="mb-3">
+                                  <label for="exampleInputText1" class="form-label">username</label>
+                                  <input type="text" placeholder="username" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-5">
+                              <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                  <input type="email" placeholder="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-5">
+                              <div class="mb-3">
+                                  <label for="exampleInputText1" class="form-label">First Name</label>
+                                  <input type="text" placeholder="First Name" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-5">
+                              <div class="mb-3">
+                                  <label for="exampleInputText1" class="form-label">Last Name</label>
+                                  <input type="text" placeholder="Last Name" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-10"><div class="border-top mt-5 mb-5"></div></div>
+                          
+                          <div class="col-12 col-sm-10 col-md-10">
+                              <h5>Contact information</h5>
+                              <div class="mb-3">
+                                  <label for="exampleInputText1" class="form-label">Address</label>
+                                  <input type="text" placeholder="Address" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+                              </div>
+                          </div>
+
+                          <div class="col-12 col-sm-10 col-md-3">
+                              <div class="mb-3">
+                                  <label for="exampleInputText1" class="form-label">city</label>
+                                  <input type="text" placeholder="city" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+                              </div>
+                          </div>
+
+                          <div class="col-12 col-sm-10 col-md-4">
+                              <div class="mb-3">
+                                  <label for="exampleInputText1" class="form-label">country</label>
+                                  <input type="text" placeholder="country" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+                              </div>
+                          </div>
+
+                          <div class="col-12 col-sm-10 col-md-3">
+                              <div class="mb-3">
+                                  <label for="exampleInputText1" class="form-label">postal code</label>
+                                  <input type="text" placeholder="Postal code" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+                              </div>
+                          </div>
+
+                          <div class="col-12 col-md-10"><div class="border-top mt-5 mb-5"></div></div>
+                          <div class="col-12 col-sm-10 col-md-10">
+                              <h5 class="mb-2">About me</h5>
+                              <div class="mb-3">
+                                  <label for="exampleInputText1" class="form-label">about me</label>
+                                  <textarea name="" placeholder="About me"  class="form-control" aria-describedby="emailHelp" cols="30" rows="10"></textarea>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+                      
+
+                  </form>
+              </div>
+              <div class="col-12 col-lg-4 order-0 order-lg-1">
+                  <div class="jungle">
+                      <div class="card">
+                      <img src="/img/scott-graham-5fNmWej4tAA-unsplash.jpg" class="ghavi" alt="">
+                      <div class="card text-center">
+                          <div class="card-body p-5">
+                          
+                            <h5 class="card-title">Jessica Jones, 27</h5>
+                            <p class="card-text pb-2">Bucharest, Romania</p>
+                            <h6 class="card-text pb-3">Solution manager</h6>
+                            <p class="card-text pb-3">University of Computer Science.</p>
+                            <a href="" class="btn btn-outline-primary p-2">Edit profile</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+{% endblock content %}          
+<!-- content done -->
+
+<!-- footer -->
+  {% block footer %}       {% include 'footer.html' %}      {% endblock footer %}
+<!-- footer done -->
+

@@ -1,0 +1,343 @@
+{% extends 'base.html' %}
+
+{% block title %}Jobs{% endblock title %}
+
+{% load static %}
+
+    <!-- banner -->
+    {% block carousel %}       
+
+    <div class="lolamimi">
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <!-- header done -->
+
+    <!-- banner -->
+    <div class="special">
+        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active h-100" data-bs-interval="10000">
+                <img src="{% static '' %}img/nick-night-52F2gX0COs4-unsplash.jpg" class="d-block h-100 w-100" alt="...">
+                <div class="like"></div>
+                <div class="carousel-caption d-md-block kempes">
+                  <div class="text-start manugee">
+                    <h5>Home > Jobs</h5>
+                    <h1>Jobs</h1>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <!-- carousel end -->
+            <!-- navbar start -->
+          <!-- <nav class="navbar pt-5 navbar-expand-lg"> -->
+          <nav class="navbar navbar-expand-lg sticky-top" id="header">
+            <div class="container">
+              <a class="navbar-brand" href="{% url 'index' %}">JobPortal</a>
+              <span class="toggle bg-warning p-2">
+                <i class="fas fa-moon"></i>
+                <!-- <i class="fas fa-sun"></i> -->
+              </span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-success glad p-2" href="{% url 'employer_postdash' %}">Post a job</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-primary glad p-2" href="{% url 'jobs' %}">Want a job</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn" href="{% url 'employee_dashboard' %}"><img src="/img/allef-vinicius-BqNEe_ZAtxg-unsplash.jpg" class="hego" alt="">&nbsp; Promise</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- navbar ends -->
+        </div>
+        <!-- carousel done -->
+    
+    {% endblock carousel %}
+    <!-- banner done -->
+
+    <!-- content -->
+    {% block content %}    
+
+            
+
+    <div class="content1 text-center mb-5 mt-5">
+      <div class="container">
+        <h5 class="pt-3 pb-4 yes" data-aos="fade-up" data-aos-duration="3000">Categories work wating for you</h5>
+        <h1 class="pt-3 pb-4 lolami yes" data-aos="fade-up" data-aos-duration="3000">Current Job Posts</h1>
+        <div class="gateway">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="3000">
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Web Development <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Educational & Training <span class="badge bg-secondary">567</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                PHP Programming <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Web Designer <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Graphics Designer <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                English <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Project Management <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Customer Service <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Multi Media <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Social Media <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Finance Management <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Marketing & Sales <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Advertising <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Writing <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Office & Admin <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a href="" class="btn p-3 w-100 fainting">
+                Software Development <span class="badge bg-secondary">456</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="content text-capitalize recent">
+        <div class="container pt-5">
+          <p class="note text-center">Recently added jobs</p>
+          <h4 class="note text-center pb-5">Recent Jobs</h4>
+          <div class="row justify-content-center">
+            
+            <div class="col-12 col-md-10">
+              <div class="gabby d-flex justify-content-between align-items-start mb-2">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold pb-3"><span class="holdme">Frontend Development </span><span class="badge bg-primary rounded-pill goddid">part-time</span></div>
+                  <span class="holdme"><i class="fas fa-database"></i> Facebook  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+                </div>
+                <!-- <span class="badge bg-primary rounded-pill goddid">14</span> -->
+                <a href="/post_detail.html" class="btn btn-primary">Apply now</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="gabby d-flex justify-content-between align-items-start mb-2">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold pb-3"><span class="holdme">Full Stack Developer </span><span class="badge bg-warning rounded-pill goddid">full-time</span></div>
+                  <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+                </div>
+                <!-- <span class="badge bg-primary rounded-pill goddid">14</span> -->
+                <a href="/post_detail.html" class="btn btn-primary">Apply now</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="gabby d-flex justify-content-between align-items-start mb-2">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold pb-3"><span class="holdme">Open Source Interactive Developer </span><span class="badge bg-secondary rounded-pill goddid">full-time</span></div>
+                  <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+                </div>
+                <a href="" class="btn btn-primary">Apply now</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="gabby d-flex justify-content-between align-items-start mb-2">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold pb-3"><span class="holdme">Frontend Development </span><span class="badge bg-success rounded-pill goddid">part-time</span></div>
+                  <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+                </div>
+                <!-- <span class="badge bg-primary rounded-pill goddid">14</span> -->
+                <a href="" class="btn btn-primary">Apply now</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="gabby d-flex justify-content-between align-items-start mb-2">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold pb-3"><span class="holdme">Open Source Interactive Developer </span><span class="badge bg-dark rounded-pill goddid">part-time</span></div>
+                  <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+                </div>
+                <!-- <span class="badge bg-primary rounded-pill goddid">14</span> -->
+                <a href="" class="btn btn-primary">Apply now</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="gabby d-flex justify-content-between align-items-start mb-2">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold pb-3"><span class="holdme">Full Stack Developer </span><span class="badge bg-primary rounded-pill goddid">full-time</span></div>
+                  <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+                </div>
+                <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+                <a href="" class="btn btn-primary">Apply now</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="gabby d-flex justify-content-between align-items-start mb-2">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold pb-3"><span class="holdme">Frontend Development </span><span class="badge bg-warning rounded-pill goddid">part-time</span></div>
+                  <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+                </div>
+                <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+                <a href="" class="btn btn-primary">Apply now</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="gabby d-flex justify-content-between align-items-start mb-2">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold pb-3"><span class="holdme">Full Stack Developer</span><span class="badge bg-danger rounded-pill goddid">part-time</span></div>
+                  <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+                </div>
+                <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+                <a href="" class="btn btn-primary">Apply now</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="gabby d-flex justify-content-between align-items-start mb-2">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold pb-3"><span class="holdme">Frontend Development </span><span class="badge bg-success rounded-pill goddid">full-time</span></div>
+                  <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+                </div>
+                <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+                <a href="" class="btn btn-primary">Apply now</a>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-10">
+              <div class="gabby d-flex justify-content-between align-items-start mb-2">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold pb-3"><span class="holdme">Open Source Interactive Developer </span><span class="badge bg-success rounded-pill goddid">part-time</span></div>
+                  <span class="holdme"><i class="fas fa-database"></i> GOogle ,inc  &nbsp;<i class="fas fa-location"></i>  Lagos, Nigeria </span>
+                </div>
+                <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+                <a href="" class="btn btn-primary">Apply now</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="text-center">
+            <div class="container">
+              <div class="row justify-content-center mt-4">
+                <div class="col-1 jane me-3 p-auto">1</div>
+                <div class="col-1 jane me-3 p-auto">2</div>
+                <div class="col-1 jane me-3 p-auto">3</div>
+                <div class="col-1 jane me-3 p-auto">4</div>
+                <div class="col-1 jane me-3 p-auto">5</div>
+                <div class="col-1 jane me-3 p-auto">6</div>
+                <div class="col-1 jane me-3 p-auto">7</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="grapes">
+
+        <div class="card text-center">
+          <div class="card-body">
+              <div class="row justify-content-center text-center align-items-center">
+                <div class="col-12 col-md-5">
+                  <h1 class="text-center text-capitalize lolae">Subscribe to our news letter</h1>
+                  <p class="text-center text-capitalize">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima amet, aliquam iusto aperiam dignissimos sapiente quidem.</p>
+                  <form action="">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control jesus" placeholder="Enter Email Address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      <button class="btn btn-success" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    {% endblock content %}          
+    <!-- content done -->
+
+    <!-- footer -->
+     {% block footer %}       {% include 'footer.html' %}      {% endblock footer %}
+    <!-- footer done -->
+
